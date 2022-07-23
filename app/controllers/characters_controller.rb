@@ -15,6 +15,7 @@ class CharactersController < ApplicationController
 
   # POST /characters
   def create
+    puts 'request received'
     @character = Character.new(character_params)
 
     if @character.save
