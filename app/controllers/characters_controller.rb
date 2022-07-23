@@ -1,6 +1,7 @@
 class CharactersController < ApplicationController
   before_action :set_character, only: %i[ show update destroy ]
-
+  respond_to :json
+  
   # GET /characters
   def index
     @characters = Character.all
